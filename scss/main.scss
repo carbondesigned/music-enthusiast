@@ -279,6 +279,7 @@ html {
   margin: 2rem;
   background-color: $clr--white;
 
+
   .post {
     padding: 2rem;
     display: flex;
@@ -286,13 +287,22 @@ html {
     justify-content: center;
     align-items: center;
 
+    .gal {
+
+      .big {
+
+        img {
+          max-width: 200px;
+        }
+      }
+    }
+
     .cover {
       margin-top: 5em;
       position: relative;
 
       z-index: 1;
       box-shadow: rgba(149, 157, 165, 0.2616px) 38px 28px 0px;
-
 
       img {
         max-width: 100%;
@@ -437,6 +447,8 @@ html {
 
   }
 }
+
+
 
 
 footer {

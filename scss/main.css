@@ -343,6 +343,10 @@ nav li .nav-cta:hover {
           align-items: center;
 }
 
+.recent-section .post .gal .big img {
+  max-width: 200px;
+}
+
 .recent-section .post .cover {
   margin-top: 5em;
   position: relative;
