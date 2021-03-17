@@ -571,6 +571,7 @@ footer .container .top {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-top: 5rem;
 }
 
 footer .container .top .left-col {
