@@ -46,6 +46,7 @@ body {
           transform: translateX(100%);
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+  overflow-x: hidden;
 }
 
 nav {
@@ -520,23 +521,29 @@ nav li .nav-cta:hover {
 footer {
   background: -webkit-gradient(linear, left top, right top, from(#6FB4FF), to(#F187FB));
   background: linear-gradient(to right, #6FB4FF, #F187FB);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 20rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 35vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
   font-family: 'Poppins', sans-serif;
   color: #0D1821;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
+  font-size: clamp(1rem, 0.2vw, 3rem);
 }
 
 footer .container {
   width: 100%;
-  height: 35vh;
+  height: 50vh;
   background: rgba(255, 255, 255, 0.35);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
@@ -559,14 +566,14 @@ footer .container {
   padding: 1rem;
 }
 
-footer .top {
+footer .container .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-footer .top .left-col {
+footer .container .top .left-col {
   width: 50%;
   padding: 0 .3rem;
   display: -webkit-box;
@@ -581,18 +588,16 @@ footer .top .left-col {
           justify-content: center;
 }
 
-footer .top .left-col h3 {
+footer .container .top .left-col h3 {
   width: 100%;
-  text-align: left;
 }
 
-footer .top .left-col p {
+footer .container .top .left-col p {
   width: 100%;
-  text-align: left;
   margin-bottom: 1rem;
 }
 
-footer .top .left-col form {
+footer .container .top .left-col form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +612,7 @@ footer .top .left-col form {
   transition: 200ms;
 }
 
-footer .top .left-col form input {
+footer .container .top .left-col form input {
   border: none;
   background: #0D1821;
   padding: .5rem;
@@ -616,28 +621,28 @@ footer .top .left-col form input {
   transition: 200ms;
 }
 
-footer .top .left-col form input::-webkit-input-placeholder {
+footer .container .top .left-col form input::-webkit-input-placeholder {
   color: #FFFCFF;
 }
 
-footer .top .left-col form input:-ms-input-placeholder {
+footer .container .top .left-col form input:-ms-input-placeholder {
   color: #FFFCFF;
 }
 
-footer .top .left-col form input::-ms-input-placeholder {
+footer .container .top .left-col form input::-ms-input-placeholder {
   color: #FFFCFF;
 }
 
-footer .top .left-col form input::placeholder {
+footer .container .top .left-col form input::placeholder {
   color: #FFFCFF;
 }
 
-footer .top .left-col form .submit {
+footer .container .top .left-col form .submit {
   padding: 1rem 0;
   text-align: left;
 }
 
-footer .top .left-col form .submit-btn {
+footer .container .top .left-col form .submit-btn {
   width: 6rem;
   border: 3px solid #0D1821;
   border-radius: 30px;
@@ -646,7 +651,7 @@ footer .top .left-col form .submit-btn {
   transition: 200ms;
 }
 
-footer .top .left-col form .submit-btn:hover {
+footer .container .top .left-col form .submit-btn:hover {
   -webkit-box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
           box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
   color: #FFFCFF;
@@ -654,13 +659,13 @@ footer .top .left-col form .submit-btn:hover {
   cursor: pointer;
 }
 
-footer .top .left-col form .email-input:hover {
+footer .container .top .left-col form .email-input:hover {
   -webkit-box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
           box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
 }
 
-footer .top .left-col form .email-input:focus,
-footer .top .left-col form .email-input:active {
+footer .container .top .left-col form .email-input:focus,
+footer .container .top .left-col form .email-input:active {
   -webkit-box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
           box-shadow: rgba(50, 50, 93, 0.3) 0px 10px 20px 0px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px;
   background-color: #FFFCFF;

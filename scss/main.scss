@@ -45,6 +45,7 @@ html {
     width: 75vw;
     transform: translateX(100%);
     transition: 300ms ease;
+    overflow-x: hidden;
   }
 
 
@@ -453,19 +454,21 @@ html {
 
 footer {
   background: $clr--gradient;
-  display: flex;
   margin-top: 20rem;
   flex-wrap: wrap;
-  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
   font-family: 'Poppins', sans-serif;
   color: $clr--black;
   position: relative;
   display: flex;
   text-align: left;
+  font-size: clamp(1rem, .2vw, 3rem);
 
   .container {
       width: 100%;
-      height: 35vh;
+      height: 50vh;
       background: rgba( 255, 255, 255, 0.35 );
       box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
       backdrop-filter: blur( 7.5px );
@@ -476,7 +479,7 @@ footer {
       align-items: center;
       text-align: center;
       padding: 1rem;
-  }
+
 
   .top {
     display: flex;
@@ -493,12 +496,11 @@ footer {
 
     h3 {
       width: 100%;
-      text-align: left;
+
     }
 
     p {
       width: 100%;
-      text-align: left;
       margin-bottom: 1rem;
     }
 
@@ -553,6 +555,7 @@ footer {
       }
     }
   }
+}
  }
 
  .right-left {
