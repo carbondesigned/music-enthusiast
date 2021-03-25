@@ -27,6 +27,7 @@ html {
 
   .nav-links {
     font-family: 'Poppins', sans-serif;
+     overflow-x: hidden;
     font-weight: 600;
     text-transform: uppercase;
     justify-content: space-around;
@@ -703,6 +704,8 @@ footer {
 
 
 
+
+
 @media screen and (min-width: 800px) {
 
   body {
@@ -1128,6 +1131,8 @@ footer {
       }
     }
 
+
+
   }
 
-}
+  }

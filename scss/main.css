@@ -17,6 +17,7 @@ body {
 
 .nav-links {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
   font-weight: 600;
   text-transform: uppercase;
   -ms-flex-pack: distribute;
